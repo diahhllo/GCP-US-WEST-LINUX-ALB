@@ -16,18 +16,18 @@ variable "project_id" {
 
 provider "google" {
   project = var.project_id
-  region  = "us-west1"
+  region  = "us-west2"
 }
 
 locals {
   servers = {
     linux1 = {
-      zone    = "us-west1-a"
-      message = "Welcome to Linux1 in US West"
+      zone    = "us-west2-a"
+      message = "Welcome to Linux1 in US West2"
     }
     linux2 = {
-      zone    = "us-west1-b"
-      message = "Welcome to Linux2 in US West"
+      zone    = "us-west2-b"
+      message = "Welcome to Linux2 in US West2"
     }
   }
 }
